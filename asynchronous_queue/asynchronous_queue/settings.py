@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'weather',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CELERY_BROKER_URL = 'redis://loclahost:6379'
+
+OPENWEATHER_API_KEY = config('OPENWEATHER_API_KEY')
